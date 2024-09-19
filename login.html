@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Hydro-Tree</title>
+    <!--Styling-->
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap">
+
+    <!--Javascript-->
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="form-left">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Hydro-Tree">
+                </div>
+                <h2 id="heading">Login</h2> 
+                <p>Welcome back. Please log in to your account</p> 
+
+                <form action="home.html" method="post" class="login-form">
+                    <div class="input-wrap">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="button" onclick="location.href='home.html'" value="Log In" class="submit-btn">
+                    </div>
+                    <div class="google-login">
+                        <button type="button" class="google-btn">
+                            <img src="images/google.png" alt="Google Icon"> Log in with Google
+                        </button>
+                    </div>
+                    <p class="signup">
+                        Don't have an account? <a href="register.html" class="register-btn">Register</a>
+                    </p>
+                </form>
+            </div>
+
+            <div class="image-right">
+                <img src="images/login.jpg" alt="Nature">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

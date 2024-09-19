@@ -1,0 +1,251 @@
+/* Global Styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.nav-link {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  color: #8ac800;
+}
+
+/* Carousel */
+.carousel-inner img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  bottom: 20%;
+}
+
+.carousel-caption h1 {
+  font-size: 4rem;
+  color: #8ac800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-color: #eeefef;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.jumbotron .btn {
+  background-color: #8ac800;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.jumbotron .btn:hover {
+  background-color: #6ea000;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.welcome hr {
+  border-top: 2px solid #8ac800;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Features Section */
+.feature-item {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem;
+}
+
+.feature-item img {
+  width: 60%;  /* Adjusted size */
+  height: auto;
+  max-width: 150px; /* Set a maximum width for better control */
+  margin: 1rem; /* Adds space below the image */
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Two Column Section */
+#hero {
+  padding: 5rem 0;
+  position: relative;
+}
+
+#sub-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#sub-hero h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+#sub-hero p {
+  font-size: 1rem;
+  color: #666;
+}
+
+#sub-hero .btn {
+  background-color: #8ac800;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#sub-hero .btn:hover {
+  background-color: #6ea000;
+}
+
+#hero img {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+  margin: auto;
+}
+
+/* Fixed Background */
+figure {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  margin: 0 !important;
+  display: none; /* Hide by default */
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed {
+  background-image: url('../images/plant2.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Show the fixed background after the Two Column Section */
+.container-fluid.padding.gray + figure {
+  display: block;
+}
+
+/* Connect Section */
+.social a {
+  font-size: 2rem;
+  color: #333;
+  margin: 0 1rem;
+}
+
+.social a:hover {
+  color: #8ac800;
+}
+
+.social-icon {
+    font-size: 2rem; /* Adjust size as needed */
+    color: #333; /* Default color */
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer .social-links a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0 0.5rem;
+}
+
+footer .social-links a:hover {
+  color: #8ac800;
+}

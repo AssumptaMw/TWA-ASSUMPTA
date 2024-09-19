@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #D3D3D3;
+}
+
+.centerpiece, .logo, .carousel, .bullets, .text-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    min-width: 400px;
+    height: 750px;
+    background-color: #fdfdfd;
+    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+    border-radius: 30px;
+}
+
+.forms-wrap, .carousel {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h2, .text-group h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #151111;
+}
+
+.heading p, label, .signin, .toggle {
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.input-field, .sign-btn {
+    width: 100%;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    transition: 0.3s;
+}
+
+.input-field {
+    height: 35px;
+    padding: 0.4rem;
+    border: 1px solid gray;
+}
+
+.input-field:active {
+    border-color: #8ac800;
+    background: #f3f4ff;
+}
+
+.sign-btn {
+    height: 35px;
+    background-color: #0d7204aa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.sign-btn:hover {
+    background-color: #8dc90a;
+}
+
+.toggle {
+    text-decoration: none;
+    font-weight: 500;
+    color: #8ac800;
+}
+
+.toggle:hover {
+    color: #6ea000;
+}
+
+.carousel {
+    background-color: #85c101;
+    grid-template-rows: auto 1fr;
+    padding-bottom: 2rem;
+}
+
+.logo img{
+    width: 100px;
+    margin: 0.7rem;
+}
+
+.image {
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.5s;
+}
+
+.image.show {
+    opacity: 1;
+    transform: none;
+}
+
+.bullets span {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #aaa;
+    margin: 0 0.25rem;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.bullets span.active {
+    width: 1.1rem;
+    background-color: #151111;
+}
+
+@media (max-width: 850px) {
+    .box, .carousel {
+        height: auto;
+        max-width: 550px;
+        overflow: hidden;
+    }
+
+    form {
+        padding: 1.5rem 2.5rem 2rem;
+    }
+}
+
+@media (max-width: 530px) {
+    main {
+        padding: 1rem;
+    }
+
+    .box {
+        border-radius: 2rem;
+    }
+
+    form {
+        padding: 1rem 2rem 1.5rem;
+    }
+}
